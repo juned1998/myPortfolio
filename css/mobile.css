@@ -1,0 +1,11 @@
+@media screen and (max-width:768px) {
+
+  #showcase-main-heading{
+    font-size: 3rem;
+  }
+
+  .color-letter-anim{
+    margin: -5px;
+  }
+
+}
