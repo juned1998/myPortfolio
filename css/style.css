@@ -10,6 +10,7 @@
   --gray-color: #C5C6C7;
   --secondary-color: #66FCF1;
   --faded-cyan-color: #45A29E;
+  --shadow-color: rgba(11,12,16,0.2);
 }
 
 /* Utilities */
@@ -105,8 +106,11 @@ body{
 
 /* Navigation bar */
 #navbar{
-  position: sticky;
+  background: rgba(11,12,16,0.5);
+  position: fixed;
   top: 0px;
+  left: 0px;
+  width: 100%;
   z-index: 1;
 }
 #navbar .container>ul{
@@ -120,7 +124,6 @@ body{
 #showcase{
   background: rgba(11,12,16,0.8);
   position: relative;
-  top: -72px;
   height: 100vh;
 }
 
@@ -147,6 +150,7 @@ body{
 
 #showcase-content{
   color: #fff;
+  overflow: hidden;
 }
 
 #showcase-main-heading{
@@ -190,7 +194,7 @@ body{
 
 #showcase-sub-heading{
   opacity: 0;
-  transform: translateX(1500px);
+  transform: translateX(1300px);
   font-weight: 100;
   line-height: 2rem;
   font-style: italic;
@@ -207,7 +211,7 @@ body{
 
 #showcase-content .btn{
   opacity: 0;
-  transform: translateX(-1500px);
+  transform: translateX(-1300px);
   animation: animateReadMore 1s forwards ease-in-out 1.5s;
 }
 @keyframes animateReadMore{
@@ -218,4 +222,63 @@ body{
 }
 
 
-/* skills */
+/* skills-section */
+#skills-section{
+  background: repeating-linear-gradient(90deg,var(--primary-color), var(--secondary-color), purple,teal);
+  background-size: 500% 500%;
+  animation: animateBackground 5s ease-in-out infinite alternate;
+}
+
+@keyframes animateBackground{
+  0%{
+    background-position: 0% 0%;
+  }
+  
+  50%{
+    background-position: 50% 100%;
+  }
+  
+  100%{
+    background-position: 100% 100%;
+  }
+
+}
+
+#skills-content{
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 1.8rem;
+  box-shadow: -5px -5px 5px var(--shadow-color);
+  border-radius: 5px;
+
+}
+
+#skills-content h2{
+  font-weight: 100;
+}
+
+#skills-content .tools-section{
+  margin-top: 1rem;
+}
+
+#skills-content .tools-section h3{
+  font-weight: 100;
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+  text-decoration: underline;
+}
+
+#skills-content .tools-section .tools{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#skills-content .tools-section .tools .logo-div{
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.logo{
+  height: 60px;
+  width: 60px;
+}

@@ -1,5 +1,5 @@
 @media screen and (max-width:768px) {
-
+  
   /* Utilities */
   .btn{
     display: inline-block;
@@ -8,6 +8,7 @@
     transition: all 0.5s ease;
   }
 
+  /* showcase */
   #showcase-main-heading{
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
@@ -15,6 +16,15 @@
 
   .color-letter-anim{
     margin: -3px;
+  }
+
+  /* skills section */
+  #skills-content h2{
+    font-size: 1.2rem;
+  }
+
+  #skills-content .tools-section h3{
+    font-size: 1rem;
   }
 
 }
