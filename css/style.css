@@ -84,7 +84,7 @@ body{
   background-clip: text;
   background-size: 500% 500%;
   -webkit-text-fill-color: transparent;
-  animation: flow 5s ease-in-out infinite alternate;
+  animation: flow 5s ease-in-out infinite alternate 2s;
 }
 
 @keyframes flow{
@@ -134,7 +134,7 @@ body{
   left: 0;
   height: 100%;
   width: 100%;
-  background: url('../img/typing.gif') no-repeat center center/cover;
+  background: url('../img/showcase-background.jpg') no-repeat center center/cover;
   z-index: -1;
 }
 
@@ -226,7 +226,7 @@ body{
 #skills-section{
   background: repeating-linear-gradient(90deg,var(--primary-color), var(--secondary-color), purple,teal);
   background-size: 500% 500%;
-  animation: animateBackground 5s ease-in-out infinite alternate;
+  animation: animateBackground 10s ease-in-out infinite alternate;
 }
 
 @keyframes animateBackground{
@@ -246,6 +246,7 @@ body{
 
 #skills-content{
   background: #f4f4f4;
+  background: rgba(244, 244, 244, 0.7);
   border: 1px solid #ddd;
   padding: 1.8rem;
   box-shadow: -5px -5px 5px var(--shadow-color);
